@@ -1,9 +1,7 @@
 package com.pb.karatytska.hw2;
 import com.sun.org.apache.bcel.internal.generic.SWITCH;
-
 import java.util.Scanner;
 public class Calculator {
-
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int operand1;
@@ -16,7 +14,6 @@ public class Calculator {
         System.out.println("Введите число");
         operand2 = scan.nextInt();
         System.out.println("Результат");
-
                 switch (sign) {
             case "+":
                 System.out.println(operand1+operand2);
@@ -24,7 +21,6 @@ public class Calculator {
             case "-":
                 System.out.println(operand1-operand2);
                 break;
-
             case "*":
                 System.out.println(operand1 * operand2);
                 break;
