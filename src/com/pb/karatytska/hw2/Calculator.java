@@ -6,37 +6,32 @@ public class Calculator {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        int a;
-        int b;
+        int operand1;
+        int operand2;
         String sign;
         System.out.println("Введите число");
-        a = scan.nextInt();
-        System.out.println("Введите число");
-        b = scan.nextInt();
+        operand1 = scan.nextInt();
         System.out.println("Введите действие + - * /");
         sign = scan.next();
+        System.out.println("Введите число");
+        operand2 = scan.nextInt();
 
-
-        switch (sign) {
+                switch (sign) {
             case "+":
-                System.out.println(a+b);
+                System.out.println(operand1+operand2);
                 break;
             case "-":
-                System.out.println(a-b);
+                System.out.println(operand1-operand2);
                 break;
 
             case "*":
-                System.out.println(a * b);
+                System.out.println(operand1 * operand2);
                 break;
             case "/":
-                b = scan.nextInt();
-            if (b!=0);{
-                System.out.println(a / b);}
-            else{
-                System.out.println("Деление на 0 запрещено, введите другое число");}
-
-
-
+                if (operand2 != 0) {System.out.println(operand1 / operand2);}
+                else { System.out.println("Деление на 0 запрещено, введите другое число");}
+            break;
         }
+
     }
 }
