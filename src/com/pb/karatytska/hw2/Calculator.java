@@ -15,6 +15,7 @@ public class Calculator {
         sign = scan.next();
         System.out.println("Введите число");
         operand2 = scan.nextInt();
+        System.out.println("Результат");
 
                 switch (sign) {
             case "+":
@@ -32,6 +33,5 @@ public class Calculator {
                 else { System.out.println("Деление на 0 запрещено, введите другое число");}
             break;
         }
-
     }
 }
