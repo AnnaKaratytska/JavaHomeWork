@@ -8,29 +8,35 @@ public class Calculator {
         Scanner scan = new Scanner(System.in);
         int a;
         int b;
-        String symbol;
+        String sign;
         System.out.println("Введите число");
         a = scan.nextInt();
         System.out.println("Введите число");
         b = scan.nextInt();
         System.out.println("Введите действие + - * /");
-        symbol = scan.next();
+        sign = scan.next();
 
 
-
-
-    SWITCH (); {
-            case "+";;
-                System.out.println("a + b = " + (a + b));
+        switch (sign) {
+            case "+":
+                System.out.println(a+b);
                 break;
-        case "-"; System.out.println("a - b = " + (a - b));
-            break;
-        case "*";;
-            System.out.println("a * b = " + (a * b));
-            break;
-        case "/";;
-            if (b == 0);
-            System.out.println("Деление на 0 запрещено");
-            System.out.println("b / a = " + (b / a));
-            break;}
+            case "-":
+                System.out.println(a-b);
+                break;
+
+            case "*":
+                System.out.println(a * b);
+                break;
+            case "/":
+                b = scan.nextInt();
+            if (b!=0);{
+                System.out.println(a / b);}
+            else{
+                System.out.println("Деление на 0 запрещено, введите другое число");}
+
+
+
+        }
+    }
 }
