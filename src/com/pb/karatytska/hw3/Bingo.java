@@ -7,7 +7,7 @@ public class Bingo {
     public static void main (String[] args) {
         Random rand = new Random();
         Scanner scan = new Scanner(System.in);
-    int x = rand.nextInt(11);
+    int x = rand.nextInt(101);
         System.out.println("Для выхода из игры введите 000");
         System.out.println("Введите целое число от 0 до 100: ");
     for (int counter = 1;;){
