@@ -2,17 +2,19 @@ package com.pb.karatytska.hw3;
 
 import com.sun.scenario.effect.impl.sw.java.JSWColorAdjustPeer;
 
+import java.util.Arrays;
+
 public class Array {
     public static void main(String[] args) {
         int[] array = new int[10];
-        array[0] = 1;
-        array[1] = 2;
+        array[0] = 8;
+        array[1] = 11;
         array[2] = -3;
         array[3] = 4;
         array[4] = 5;
-        array[5] = 6;
+        array[5] = -6;
         array[6] = 7;
-        array[7] = 8;
+        array[7] = 15;
         array[8] = -9;
         array[9] = 10;
 
@@ -37,9 +39,31 @@ public class Array {
         }
         System.out.println("Положительных элементов: " + pos);
 
-
+        bubbleSort(array);
+        System.out.println("Массив после пузырьковой сортировки : " + Arrays.toString(array));
     }
-}
+        public static void bubbleSort ( int[] num){
+            int j;
+            boolean flag = true;   // устанавливаем наш флаг в true для первого прохода по массиву
+            int temp;   // вспомогательная переменная
+
+            while (flag) {
+                flag = false;
+                for (j = 0; j < num.length - 1; j++) {
+                    if (num[j] > num[j + 1]) {
+                        temp = num[j];
+                        num[j] = num[j + 1];
+                        num[j + 1] = temp;
+                        flag = true;
+                    }
+                }
+            }
+
+        }
+    }
+
+
+
 
 
 
